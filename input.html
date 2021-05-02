@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Input</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Body Mass Index</h1>
+	<label>
+		Výška v centimetrech
+		<input name="vyska" type="number" min="40" max="300" />
+	</label>
+	<label>
+		Váha v kilogramech
+		<input name="vaha" type="number" min="2" max="200" />
+	</label>
+
+	<div id="vysledek">
+		Výsledný index:
+		<span></span>
+	</div>
+
+	<script src="bmi-input.js"></script>
+</body>
+</html>
