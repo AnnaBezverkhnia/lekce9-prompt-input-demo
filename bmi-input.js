@@ -3,6 +3,10 @@ function vypocitejBMI() {
     let vyskaMetry = parseFloat(document.querySelector('input[name=vyska]').value) / 100;
     let vahaKilogramy = parseInt(document.querySelector('input[name=vaha]').value);
 
+    if(isNaN(vyskaMetry) || isNaN(vahaKilogramy)) {
+        return;
+    }
+
     let BMI = Math.round(vahaKilogramy / Math.pow(vyskaMetry, 2) * 10) / 10;
 
     vyspiBMI(BMI);
