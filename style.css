@@ -15,3 +15,7 @@ label {
 #vysledek {
 	margin-top: 20px;
 }
+
+ul {
+	text-align: left;
+}
